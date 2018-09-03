@@ -12,4 +12,10 @@ $(document).ready(function() {
     $('ul').toggleClass('block');
   });
 
+  $.each( $('*'), function() {
+    if( $(this).width() > $('body').width()) {
+        console.log("Wide Element: ", $(this), "Width: ", $(this).width());
+    }
+});
+
 });
